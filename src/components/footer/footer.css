@@ -1,0 +1,118 @@
+.mainF {
+  width: 100%;
+}
+
+.futr {
+  background-image: url("https://solara.uz/assets/images/28/281d04_bg-buisness.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* z-index: 11; */
+}
+
+.fList {
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10%;
+  box-sizing: border-box;
+  color: white;
+  background-color: #021533;
+}
+
+.fontS {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.footer-info {
+  font-size: 1rem;
+}
+
+.slash {
+  font-weight: 700;
+  display: none;
+  transition: .5s;
+}
+
+.linkT {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+  overflow: hidden;
+  transition: all .5s;
+
+  &:hover {
+    color: #ffcd1e;
+
+    .slash {
+      display: inline-block;
+      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+      transition: all .5s;
+      opacity: 10;
+    }
+  }
+}
+
+/* button */
+.animated-button {
+  margin-top: 2rem;
+  padding: .8rem 1.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #FFCD1E;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  overflow: hidden;
+}
+
+.animated-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #273968;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+  z-index: -1;
+}
+
+.animated-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #273968;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+  z-index: -1;
+}
+
+.animated-button:hover:before {
+  transform: scaleX(1);
+}
+
+.animated-button:hover:after {
+  transform: scaleX(1);
+}
+
+.animated-button:hover {
+  background-color: #273968;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}

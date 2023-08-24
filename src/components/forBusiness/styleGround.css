@@ -1,0 +1,25 @@
+.ground {
+    margin-top: 4rem;
+    overflow: hidden;
+}
+
+.ground-bg {
+    background-image: url("https://solara.uz/assets/images/5e/5ef966_forbusiness-img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1.1);
+    width: 100%;
+    height: 900px;
+}
+
+@media only screen and (max-width: 991px) {
+    .ground-bg {
+        height: 800px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .ground-bg {
+        height: 700px;
+    }
+}

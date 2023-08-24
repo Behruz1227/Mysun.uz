@@ -1,0 +1,13 @@
+.autonomous {
+    margin-top: 6rem;
+}
+
+.autonomous video {
+    width: 100%;
+}
+
+/* @media only screen and (max-width: 991px) {
+    .autonomous {
+        margin-top: 3rem;
+    }
+} */

@@ -1,0 +1,125 @@
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  background-color: #FFCD1E;
+  border-radius: 0;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all opacity 10s visibility 10s;
+  z-index: 8;
+}
+
+#backToTopBtn.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+#backToTopBtn.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.project__bg {
+  background-image: url("http://solara.uz/assets/images/49/4914c5_blog-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-top: 8rem;
+}
+
+.project__bg h1 {
+  font-size: 2.7rem;
+  color: #273968;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project__bg a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  transition: all .5s;
+
+  &:hover {
+    color: #FFCD1E;
+  }
+}
+
+.project__bg span {
+  color: #273968;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.project-btn button {
+  padding: .3rem .7rem;
+  border-radius: 0;
+  border: none;
+  margin-right: .7rem;
+  margin-bottom: 2%;
+  font-size: 1.04rem;
+  font-weight: 400;
+  color: black;
+  background-color: #E6E6E6;
+
+  &:hover {
+    background-color: #E6E6E6;
+    color: black;
+  }
+
+  &:active:focus {
+    background-color: #273968;
+    color: white;
+  }
+
+  &:focus {
+    background-color: #273968;
+    color: white;
+  }
+}
+
+.card-project {
+  border: none;
+  transition: all .5s;
+  border-radius: 0;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+  }
+}
+
+.card-project img {
+  transition: all .5s;
+
+  &:hover {
+    filter: brightness(.4);
+    transform: scale(1.1);
+  }
+}
+
+.card-title {
+  color: #273968;
+  font-weight: 700;
+  letter-spacing: .3px;
+  font-size: 1.5rem;
+  transition: all .5s;
+
+  &:hover {
+    color: #FFCD1E;
+  }
+}
+
+.card-sub-title {
+  color: rgb(89, 88, 88);
+  font-weight: 700;
+  font-size: .9rem;
+} 

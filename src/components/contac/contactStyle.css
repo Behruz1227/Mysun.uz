@@ -1,0 +1,152 @@
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  background-color: #FFCD1E;
+  border-radius: 0;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all opacity 10s visibility 10s;
+  z-index: 8;
+}
+
+#backToTopBtn.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+#backToTopBtn.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contact-info {
+  padding-top: 2rem;
+}
+
+.contact-info a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: gray;
+  font-weight: 700;
+  transition: all .5s;
+
+  &:hover {
+    color: #FFCD1E;
+  }
+}
+
+.contact-info span {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: gray;
+}
+
+.main-contact__info h3 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #273968;
+}
+
+.main-contact__info p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: rgb(50, 50, 50);
+  line-height: 1.8;
+}
+
+.map__bg {
+  background-color: #F2F2F2;
+  margin-top: 7rem;
+}
+
+.map__bg h3 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #273968;
+}
+
+.map__bg h3~p {
+  font-size: 1.1rem;
+  letter-spacing: .4px;
+}
+
+.map__bg p {
+  font-size: 1rem;
+  line-height: 1;
+  color: rgb(53, 53, 53);
+}
+
+.map iframe {
+  filter: brightness(.4);
+}
+
+.anim-button {
+  padding: .8rem 2rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  background-color: #273968;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.anim-button::before,
+.anim-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FFCD1E;
+  transition: transform 0.5s;
+  z-index: -1;
+}
+
+.anim-button::before {
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.anim-button::after {
+  top: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.anim-button:hover::before,
+.anim-button:focus::before,
+.anim-button:active::before {
+  transform: scaleX(1);
+}
+
+.anim-button:hover::after,
+.anim-button:focus::after,
+.anim-button:active::after {
+  transform: scaleX(1);
+}
+
+.anim-button:hover {
+  background-color: #FFCD1E;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+.contact-statistics h3 {
+  font-size: 1.6rem;
+  color: #273968;
+  font-weight: 700;
+}
+
+.contact-statistics p {
+  font-size: 1rem;
+}
